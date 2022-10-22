@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">PayMe</string>
+    <string name="bottom_menu_item_one">$0.00</string>
+    <string name="bottom_menu_item_two">$0.00</string>
+    <string name="bottom_menu_item_three">$0.00</string>
+    <string name="bottom_menu_item_four">$0.00</string>
+    <string name="delete_transfer_number"></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="remove"> </string>
+    <string name="title_activity_test_basic_activity">test_basic_activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="pay_text">Pay</string>
+    <string name="to_text">To:</string>
+    <string name="for_text">For:</string>
+    <string name="friend_text">FRIENDS</string>
+    <string name="link_account_text">Linked Accounts </string>
+    <string name="account_text">ACCOUNTS</string>
+    <string name="debit_card_text">Debit Card</string>
+    <string name="link_bank_text">Link Bank</string>
+    <string name="link_credit_dard_text">Link Credit Card</string>
+    <string name="deposite_and_transfer_text"><![CDATA[Deposits & Transfer]]></string>
+
+
+    <string name="ad_nfcTurnOn_pos">Turn on</string>
+    <string name="ad_nfcTurnOn_neg">Dismiss</string>
+    <string name="initial_status_nfc">Waiting for NFC</string>
+    <string name="confirm">Confirm</string>
+    <string name="edit_text_hint">Input whatever your want</string>
+    <string name="toast_msg">please write something in editText</string>
+    <string name="servicedesc">servicedesc</string>
+    <string name="aiddescription">aiddescription</string>
+
+    <string name="card_header">NFN CARD</string>
+    <string name="card_number_sample">XXXX XXXX XXXX XXXX</string>
+    <string name="card_validity_label">VALID UPTO</string>
+    <string name="card_validity_sample">MM/YY</string>
+    <string name="card_name_sample">CARD HOLDER</string>
+    <string name="card_type">Card type</string>
+    <string name="bank">Bank</string>
+    <string name="country">Country</string>
+    <string name="currency">Currency</string>
+    <string name="here_are_your_n_card_details">Here are your\n card details</string>
+    <string name="card_details">Scan your credit card number or\nEnter the 16 digits of a card number (BIN/IIN)</string>
+    <string name="enter_card_number">Enter card number</string>
+
+    <string name="card_number"> XXXX XXXX XXXX XXXX</string>
+
+
+    <string name="repoUrl">https://github.com/pro100svitlo/Credit-Card-NFC-Reader#questions-and-help</string>
+    <string name="tv_noNfc">There is no NFC module on this device</string>
+    <string name="tv_tapYourCard">Please put your card to back panel of the phone</string>
+    <string name="ad_progressBar_title">Scanning …</string>
+    <string name="ad_progressBar_mess">Please do not remove or move card during reading.</string>
+    <string name="snack_unknown_bank_card">This is unknown bank card. Please, go to my github repo!</string>
+    <string name="snack_doNotMoveCard">Please do not move card, try again !</string>
+    <string name="snack_unknownEmv">Unknown EMV card</string>
+    <string name="snack_lockedNfcCard">NFC is locked on this card.</string>
+    <string name="ad_nfcTurnOn_title">NFC is turned off.</string>
+    <string name="ad_nfcTurnOn_message">You need turn on NFC module for scanning. Wish turn on it now?</string>
+    <string name="delete_text"><![CDATA[<]]></string>
+    <string name="activity_text">Activity</string>
+    <string name="card_text">Card Balance</string>
+    <string name="paymentdue_text">Payment Due In</string>
+    <string name="weekly_Activity">Weekly Activity</string>
+    <string name="investment_text">Investment Balance</string>
+    <string name="investment_text_t">Investment</string>
+
+
+    <string name="message_beaming_complete">Beaming complete</string>
+    <string name="hint_your_message">Your message</string>
+    <string name="label_your_message">Hold Near Reader</string>
+    <string name="title_btn_set">Set Message</string>
+</resources>

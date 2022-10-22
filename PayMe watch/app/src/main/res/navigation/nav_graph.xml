@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/fragmentTransfer">
+
+    <fragment
+        android:id="@+id/fragmentCashBalance"
+        android:name="com.se3.payme.BottomNavScreen.CashBalance"
+
+        tools:layout="R.layout.activity_cash_balance" >
+        <action
+            android:id="@+id/action_CashBalance_to_LinkAccountFragment"
+            app:destination="@id/link_account_fragment"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/stationary"
+            app:popEnterAnim="@anim/stationary"
+            app:popExitAnim="@anim/slide_down" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/bottomActivity"
+        android:name="com.se3.payme.bubbleNavigation.BottomBarActivity"
+        tools:layout="@layout/activity_bottom_bar" />
+    <fragment
+        android:id="@+id/fragmentCard"
+        android:name="com.se3.payme.BottomNavScreen.CardFragment"
+        tools:layout="@layout/fragment_card" />
+    <fragment
+        android:id="@+id/fragmentTransfer"
+        android:name="com.se3.payme.BottomNavScreen.TransferFragment"
+        tools:layout="@layout/fragment_transfer" >
+        <action android:id="@+id/action_Transfer_to_ContactInfo"
+            app:destination="@id/contactPayPage"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/stationary"
+            app:popEnterAnim="@anim/stationary"
+            app:popExitAnim="@anim/slide_down"/>
+
+        <action android:id="@+id/action_Transfer_to_BottomActvity"
+            app:destination="@id/bottomActivity"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/stationary"
+            app:popEnterAnim="@anim/stationary"
+            app:popExitAnim="@anim/slide_down"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentHistory"
+        android:name="com.se3.payme.BottomNavScreen.HistoryFragment"
+        tools:layout="@layout/fragment_transfer">
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentBusiness"
+        android:name="com.se3.payme.BottomNavScreen.CroudFunding"
+        tools:layout="@layout/fragment_croud_funding"/>
+    <action android:id="@+id/croudFundingView_to_postProject"
+        app:destination="@id/postProject"
+        />
+    <fragment
+        android:id="@+id/contactPayPage"
+        android:name="com.se3.payme.bubbleNavigation.ContactPayFragment"
+        tools:layout="@layout/fragment_contact_pay" >
+        <action android:id="@+id/contactPayPage_to_SecurePassword"
+            app:destination="@id/securePassword"
+            />
+
+    </fragment>
+    <fragment
+        android:id="@+id/securePassword"
+        android:name="com.se3.payme.Secure.SecurityPassword"
+        tools:layout="@layout/fragment_security_password" >
+        <action android:id="@+id/securePassword_to_loadPayment"
+            app:destination="@id/LoadPayment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/LoadPayment"
+        android:name="com.se3.payme.bubbleNavigation.LoadPayment"
+        tools:layout="@layout/fragment_load_payment" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/link_account_fragment"
+        android:name="com.se3.payme.bubbleNavigation.LinkBankFragment"
+        tools:layout="@layout/fragment_link_bank" >
+    </fragment>
+<!--    <fragment-->
+<!--        android:id="@+id/croudFunding"-->
+<!--        android:name="com.se3.payme.croudFunding.croundFundingViewFragment"-->
+<!--        tools:layout="@layout/fragment_cround_funding_view" >-->
+<!--        <action android:id="@+id/croudFundingView_to_postProject"-->
+<!--            app:destination="@id/postProject"-->
+<!--            />-->
+<!--    </fragment>-->
+    <fragment
+        android:id="@+id/seePost"
+        android:name="com.se3.payme.croudFunding.SeeMoreInfoFragment"
+        tools:layout="@layout/fragment_see_more_info" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/postProject"
+        android:name="com.se3.payme.bubbleNavigation.PostProjectFragment"
+        tools:layout="@layout/post_project" >
+        <action android:id="@+id/actionSeeMore_toInvestScreen"
+            app:destination="@id/seePost"
+            />
+    </fragment>
+
+
+</navigation>

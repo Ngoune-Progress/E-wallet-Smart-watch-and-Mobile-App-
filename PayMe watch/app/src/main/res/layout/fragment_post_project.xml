@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+
+
+      <TextView
+          android:id="@+id/themtTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_marginTop="24dp"
+          android:text="Theme"
+          android:textColor="?android:colorPrimary"
+          android:textSize="20dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/textInputLayout"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_marginEnd="16dp"
+          android:hint="Ex Ecomerce"
+          android:textColorHint="@color/grey"
+          app:hintTextColor="@color/grey"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/themtTextView">
+
+         <com.google.android.material.textfield.TextInputEditText
+             android:id="@+id/InvestorName"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:backgroundTint="@color/white"
+             android:inputType="textEmailAddress"
+             android:singleLine="true"
+             android:textColor="?android:colorPrimary" />
+      </com.google.android.material.textfield.TextInputLayout>
+
+   <TextView
+       android:id="@+id/MinTextView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="16dp"
+       android:layout_marginTop="8dp"
+       android:text="Minimum investment amount"
+       android:textColor="?android:colorPrimary"
+       android:textSize="20dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/amount"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_marginEnd="16dp"
+          android:hint="Ex 1M or 1K"
+          android:textColorHint="@color/grey"
+          app:hintTextColor="@color/grey"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/MinTextView">
+
+         <com.google.android.material.textfield.TextInputEditText
+             android:id="@+id/amountText"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:inputType="textEmailAddress"
+             android:singleLine="true"
+             android:textColor="?android:colorPrimary"             />
+      </com.google.android.material.textfield.TextInputLayout>
+
+   <TextView
+       android:id="@+id/ContactInfo"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="16dp"
+       android:layout_marginTop="8dp"
+       android:text="Tel"
+       android:textColor="?android:colorPrimary"
+       android:textSize="20dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/amount" />
+
+   <ProgressBar
+       android:id="@+id/postProjectProgress"
+       android:layout_width="wrap_content"
+       android:visibility="gone"
+       android:layout_height="wrap_content"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/emailOrTelBox"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_marginEnd="16dp"
+          android:hint="Ex 1M or 1K"
+          android:textColorHint="@color/grey"
+          app:hintTextColor="@color/grey"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/ContactInfo">
+
+         <com.google.android.material.textfield.TextInputEditText
+             android:id="@+id/emailOrTel"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:inputType="textEmailAddress"
+             android:singleLine="true"
+             android:textColor="@color/black" />
+      </com.google.android.material.textfield.TextInputLayout>
+
+   <TextView
+       android:id="@+id/shortDescript"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="16dp"
+       android:layout_marginTop="8dp"
+       android:text="Short Descrip"
+       android:textColor="?android:colorPrimary"
+       android:textSize="20dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/emailOrTelBox" />
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/textInputLayout2"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          android:layout_marginStart="8dp"
+          android:layout_marginEnd="8dp"
+          android:textColorHint="@color/grey"
+          app:hintTextColor="@color/grey"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/shortDescript">
+
+         <EditText
+             android:id="@+id/briefDesc"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="8dp"
+             android:layout_marginEnd="8dp"
+             android:lines="10"
+             android:singleLine="false"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.0"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <ImageView
+          android:id="@+id/imageView"
+          android:layout_width="70dp"
+          android:layout_height="70dp"
+          android:layout_marginTop="16dp"
+          android:layout_marginEnd="16dp"
+          android:src="@drawable/pdf_icon"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+   <com.google.android.material.button.MaterialButton
+       android:id="@+id/materialButton"
+       android:layout_width="wrap_content"
+       android:layout_height="60dp"
+       android:layout_marginStart="16dp"
+       android:layout_marginTop="24dp"
+       android:backgroundTint="#F15642"
+       android:textColor="@color/white"
+
+       android:text="Upload ( Business plan )"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+   <com.google.android.material.button.MaterialButton
+       android:id="@+id/postProject"
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:layout_marginStart="16dp"
+       android:layout_marginTop="16dp"
+       android:layout_marginEnd="16dp"
+       android:text="Post"
+
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/materialButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

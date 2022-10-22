@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ButtonStyle"
+        parent="Widget.MaterialComponents.Button">
+        <item name="materialThemeOverlay">@style/GreenButtonThemeOverlay</item>
+    </style>
+
+    <style name="GreenButtonThemeOverlay">
+        <item name="colorPrimary">@color/black</item>
+        <item name="android:drawableLeft">@drawable/ic_scan</item>
+    </style>
+
+    <style name="ThemeOverlay.PinDotView" parent="">
+        <item name="colorPrimary">@color/black</item> // Tints biometric icon and active elements of pin input
+        <item name="colorOnSurface">@color/white</item> // Changes color of idle elements of pin input and keyboard delimiters
+        // + regular text styling
+    </style>
+    <style name="matchwrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textview_small" parent="matchwrap">
+
+        <item name="android:textSize">@dimen/small_text</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="custom_tv" parent="@android:style/TextAppearance.DeviceDefault.Large">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginRight">@dimen/activity_vertical_margin</item>
+    </style>
+    <style name="textview_medium" parent="matchwrap">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textSize">@dimen/medium_text</item>
+        <item name="android:fontFamily">@font/mavenpro_medium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="view_line">
+        <item name="android:layout_marginTop">@dimen/ten_dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line_height</item>
+    </style>
+
+    <style name="linear_layout_line" parent="matchwrap">
+        <item name="android:layout_marginEnd">@dimen/twenty_dp</item>
+    </style>
+
+    <style name="icon_styl">
+        <item name="android:layout_marginTop">@dimen/fiftn_dp</item>
+        <item name="android:layout_height">@dimen/twenty_fiv_dp</item>
+        <item name="android:layout_width">@dimen/twenty_fiv_dp</item>
+        <item name="android:layout_marginStart">@dimen/twenty_dp</item>
+        <item name="android:layout_marginEnd">@dimen/twenty_dp</item>
+        <item name="android:tint">@color/colorAccent</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+
+
+    <style name="title_text" parent="matchwrap">
+
+        <item name="android:textSize">@dimen/count_text</item>
+        <item name="android:layout_marginBottom">@dimen/five_dp</item>
+        <item name="android:fontFamily">@font/mavenpro_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">@dimen/eithen_dp</item>
+
+
+    </style>
+    <style name="title_detail_text" >
+        <item name="android:textSize">@dimen/sevntten_sp</item>
+        <item name="android:layout_marginBottom">@dimen/thirt_five_dp</item>
+        <item name="android:layout_marginTop">@dimen/five_dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <style name="text_content" >
+        <item name="android:textSize">@dimen/nav_header_text</item>
+        <item name="android:layout_margin">@dimen/sixteen_dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/mavenpro_regular</item>
+        <item name="android:gravity">center_vertical</item>
+
+    </style>
+</resources>

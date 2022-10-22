@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContaclessPayment.ReceiverActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBarP"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/nfcFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+
+        android:id="@+id/imv_city"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/card_ruby"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/smiley"
+        app:layout_constraintEnd_toEndOf="@+id/imv_city"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Banking"
+        android:textColor="?android:textColorPrimary"
+
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/imageView14"-->
+    <!--            android:layout_width="35dp"-->
+    <!--            android:layout_height="35dp"-->
+    <!--            android:fontFamily="@font/mavenpro_bold"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="R"-->
+    <!--            android:textColor="#B61C0A"-->
+    <!--            android:textSize="30dp"-->
+    <!--            android:textStyle="italic"-->
+    <!--            app:layout_constraintEnd_toStartOf="@+id/balance_text"-->
+    <!--            app:layout_constraintTop_toTopOf="@+id/balance_text" />-->
+
+
+    <TextView
+        android:id="@+id/userFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="32dp"
+
+        android:layout_marginTop="208dp"
+        android:fontFamily="cursive"
+        android:text="N"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/imv_city"
+        app:layout_constraintTop_toTopOf="@+id/imv_city" />
+
+    <ImageView
+        android:id="@+id/nfcImage1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/nfc_icon1"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv_city"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <TextView
+        android:id="@+id/tv_out_label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/label_your_message"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="?android:colorPrimary"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/nfcImage1"
+        app:layout_constraintStart_toStartOf="@+id/nfcImage1"
+        app:layout_constraintTop_toBottomOf="@+id/nfcImage1" />
+
+
+
+    <ImageView
+        android:id="@+id/success1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/success"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv_city" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/nfcFrame2"
+        android:visibility="gone"
+
+        >
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/unnamed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.qusion.lib_pindotview.PinDotView
+            android:id="@+id/nfcPinView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            android:theme="@style/Theme.Material3.Dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13"
+            app:pin_length="5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
